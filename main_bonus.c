@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main_bonus.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kferterb <kferterb@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kferterb <kferterb@student.21-school.ru    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 21:52:37 by kferterb          #+#    #+#             */
-/*   Updated: 2022/03/03 16:48:59 by kferterb         ###   ########.fr       */
+/*   Updated: 2022/06/27 22:42:26 by kferterb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,6 @@ int	ft_atoi(const char *str)
 
 void	ft_return(t_obj*o)
 {
-	int	i;
-
-	i = 0;
 	free(o->p);
 	free(o->pid);
 	sem_close(o->fork);
